@@ -10,4 +10,8 @@ class OtpController extends Controller
     {
         return view('otp');
     }
+    // public function showOtpForm()
+    // {
+    //     return view('otp');
+    // }
 }

@@ -73,7 +73,7 @@
                                
                         <form class="login-register text-start mt-20" method="POST" action="{{ route('otp') }}">
                             @csrf
-
+                            
                             <div class="form-group">
                                 <label class="form-label" for="otp">CODE</label>
                                 <input class="form-control @error('name') is-invalid @enderror" id="name" type="text" required="" name="otp" value="{{ old('otp') }}" placeholder="7T6F9R">

@@ -19,12 +19,16 @@ use App\Http\Controllers\OfferDetailsController;
 |
 */
 
+Route::get('/otp', [OtpController::class, 'index'])->name('otp');
+
+
+
 Route::get('/', function () {
     return view('auth.login');
 });
 
 
-Route::get('/otp', [App\Http\Controllers\OtpController::class, 'index'])->name('otp');
+//Route::get('/otp', [App\Http\Controllers\OtpController::class, 'index'])->name('otp');
 
 Auth::routes(['verify' => true]);//add for redirection
 
