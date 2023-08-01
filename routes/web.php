@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-
+use App\Http\Controllers\OtpController;
 use App\Http\Controllers\AddOfferController;
 use App\Http\Controllers\MyOffersController;
 use App\Http\Controllers\OffersController;
@@ -23,6 +23,8 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+
+Route::get('/otp', [App\Http\Controllers\OtpController::class, 'index'])->name('otp');
 
 Auth::routes(['verify' => true]);//add for redirection
 
