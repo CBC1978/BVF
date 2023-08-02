@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\OtpController;
+<<<<<<< HEAD
 use App\Http\Controllers\AddOfferController;
 use App\Http\Controllers\MyOffersController;
 use App\Http\Controllers\OffersController;
@@ -12,8 +13,15 @@ use    App\Http\Controllers\HomeController;
 
 use Illuminate\Support\Facades\Auth;
 
+=======
+use App\Http\Controllers\Offers\AddOfferController;
+use App\Http\Controllers\Offers\MyOffersController;
+use App\Http\Controllers\Offers\OffersController;
+use App\Http\Controllers\Offers\OfferDetailsController;
+use Illuminate\Support\Facades\Auth; 
+>>>>>>> 9c34a83185966e4b7ffb58884dbe8c3ec260a30e
 
-use App\Http\Controllers\AdminUserGestionController;
+use App\Http\Controllers\Admin\AdminUserGestionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
