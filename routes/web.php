@@ -7,11 +7,11 @@ use App\Http\Controllers\AddOfferController;
 use App\Http\Controllers\MyOffersController;
 use App\Http\Controllers\OffersController;
 use App\Http\Controllers\OfferDetailsController;
-<<<<<<< HEAD
+
 use    App\Http\Controllers\HomeController;
-=======
-use Illuminate\Support\Facades\Auth; 
->>>>>>> 2845eef575541b0f1b99e3e5adcc3e963950acb0
+
+use Illuminate\Support\Facades\Auth;
+
 
 use App\Http\Controllers\AdminUserGestionController;
 /*
@@ -48,24 +48,22 @@ Route::get('/home', function () {
     }
 })->name('home');
 
-<<<<<<< HEAD
+
 Auth::routes(['verify' => true]);//add for redirection
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-=======
+
 Route::get('/a_home', function () {
     return view('a_home'); // Ajouter cette route au cas où l'utilisateur naviguerait directement vers /a_home
 })->name('a_home')->middleware('auth', 'role:admin');
->>>>>>> 2845eef575541b0f1b99e3e5adcc3e963950acb0
+
 
 Route::get('/addoffer', [AddOfferController::class, 'index'])->name('add_offer');
 Route::get('/myoffers', [MyOffersController::class, 'index'])->name('myoffers');
 Route::get('/offerdetails', [OfferDetailsController::class, 'index'])->name('offer_details');
 Route::get('/offers', [OffersController::class, 'index'])->name('offers');
 
-<<<<<<< HEAD
-Route::get('/message', [AddOfferController::class, 'message'])->name('message');
-=======
 
->>>>>>> 2845eef575541b0f1b99e3e5adcc3e963950acb0
+Route::get('/message', [AddOfferController::class, 'message'])->name('message');
+
 
