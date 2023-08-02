@@ -3,13 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\OtpController;
-use App\Http\Controllers\AddOfferController;
-use App\Http\Controllers\MyOffersController;
-use App\Http\Controllers\OffersController;
-use App\Http\Controllers\OfferDetailsController;
+use App\Http\Controllers\Offers\AddOfferController;
+use App\Http\Controllers\Offers\MyOffersController;
+use App\Http\Controllers\Offers\OffersController;
+use App\Http\Controllers\Offers\OfferDetailsController;
 use Illuminate\Support\Facades\Auth; 
 
-use App\Http\Controllers\AdminUserGestionController;
+use App\Http\Controllers\Admin\AdminUserGestionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes

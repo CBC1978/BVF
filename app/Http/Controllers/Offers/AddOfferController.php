@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Offers;
 
 use Illuminate\Http\Request;
 
@@ -8,6 +8,6 @@ class AddOfferController extends Controller
 {
     public function index()
     {
-        return view('add_offer');
+        return view('offers.add_offer');
     }
 }
