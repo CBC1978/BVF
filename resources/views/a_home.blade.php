@@ -1,16 +1,16 @@
 
 
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <div class="box-heading">
     <div class="box-title"> 
-      <h3 class="mb-35">Tableau de Bord</h3>
+      <h3 class="mb-35">ADMIN : Tableau de Bord</h3>
     </div>
     <div class="box-breadcrumb"> 
       <div class="breadcrumbs">
         <ul> 
-          <li> <a class="icon-home" href="index.html">Tableau de bord</a></li>
+          <li> <a class="icon-home" href="index.html">ADMIN : Tableau de Bord</a></li>
           <li><span>Dashboard</span></li>
           
         </ul>
@@ -82,128 +82,7 @@
   
     </div>
   </div>
-    <div class="row"> 
-    <div class="col-lg-12"> 
-      <div class="section-box">
-        <div class="container"> 
-          <div class="panel-white mb-30">
-            <div class="box-padding">
-              <div class="box-filters-job">
-                <div class="row">
-                  <div class="box-title"> 
-                    <h3 class="mb-35">Offres Recentes</h3>
-                  </div> 
-              </div>
-              <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                  <div class="card-grid-2 hover-up">
-                    <div class="card-grid-2-image-left"><span class="flash"></span>
-                      <div class="image-box"><img src="imgs/brands/brand-1.png" alt="jobBox"></div>
-                      <div class="right-info"><a class="name-job{{ request()->routeIs('offer_details') ? 'active' : '' }}"  href="{{ route('offer_details') }}">ATX Transit</a>
-                        {{-- <span class="location-small">New York, US</span> --}}
-                      </div>
-                    </div>
-                    <div class="card-block-info">
-                      <h6><a href="offer-details.html">BOBO-OUAGADOUGOU</a></h6>
-                      <div class="mt-5"><span class="card-briefcase">Datelimite :</span><span class="card-time">12<span> jours</span></span></div>
-                      <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                      <div class="mt-30"><a class="btn btn-grey-small mr-5" href="">14 Tonnes</a><a class="btn btn-grey-small mr-5" href="">7 m3</a>
-                      </div>
-                      <div class="card-2-bottom mt-30">
-                        <div class="row">
-                          <div class="col-lg-7 col-7"><span class="card-text-price">250.500</span><span class="text-muted">F</span></div>
-                          <div class="col-lg-5 col-5 text-end">
-                            <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Postuler</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                  <div class="card-grid-2 hover-up">
-                    <div class="card-grid-2-image-left"><span class="flash"></span>
-                      <div class="image-box"><img src="imgs/brands/brand-1.png" alt="jobBox"></div>
-                      <div class="right-info"><a class="name-job" href="company-details.html">ATX Transit</a>
-                        {{-- <span class="location-small">New York, US</span> --}}
-                      </div>
-                    </div>
-                    <div class="card-block-info">
-                      <h6><a href="offer-details.html">BOBO-OUAGADOUGOU</a></h6>
-                      <div class="mt-5"><span class="card-briefcase">Datelimite :</span><span class="card-time">12<span> jours</span></span></div>
-                      <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                      <div class="mt-30"><a class="btn btn-grey-small mr-5" href="">14 Tonnes</a><a class="btn btn-grey-small mr-5" href="">7 m3</a>
-                      </div>
-                      <div class="card-2-bottom mt-30">
-                        <div class="row">
-                          <div class="col-lg-7 col-7"><span class="card-text-price">250.500</span><span class="text-muted">F</span></div>
-                          <div class="col-lg-5 col-5 text-end">
-                            <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Postuler</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                  <div class="card-grid-2 hover-up">
-                    <div class="card-grid-2-image-left"><span class="flash"></span>
-                      <div class="image-box"><img src="imgs/brands/brand-1.png" alt="jobBox"></div>
-                      <div class="right-info"><a class="name-job" href="company-details.html">ATX Transit</a>
-                        {{-- <span class="location-small">New York, US</span> --}}
-                      </div>
-                    </div>
-                    <div class="card-block-info">
-                      <h6><a href="offer-details.html">BOBO-OUAGADOUGOU</a></h6>
-                      <div class="mt-5"><span class="card-briefcase">Datelimite :</span><span class="card-time">12<span> jours</span></span></div>
-                      <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                      <div class="mt-30"><a class="btn btn-grey-small mr-5" href="">14 Tonnes</a><a class="btn btn-grey-small mr-5" href="">7 m3</a>
-                      </div>
-                      <div class="card-2-bottom mt-30">
-                        <div class="row">
-                          <div class="col-lg-7 col-7"><span class="card-text-price">250.500</span><span class="text-muted">F</span></div>
-                          <div class="col-lg-5 col-5 text-end">
-                            <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Postuler</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                  <div class="card-grid-2 hover-up">
-                    <div class="card-grid-2-image-left"><span class="flash"></span>
-                      <div class="image-box"><img src="imgs/brands/brand-1.png" alt="jobBox"></div>
-                      <div class="right-info"><a class="name-job" href="company-details.html">ATX Transit</a>
-                        {{-- <span class="location-small">New York, US</span> --}}
-                      </div>
-                    </div>
-                    <div class="card-block-info">
-                      <h6><a href="offer-details.html">BOBO-OUAGADOUGOU</a></h6>
-                      <div class="mt-5"><span class="card-briefcase">Datelimite :</span><span class="card-time">12<span> jours</span></span></div>
-                      <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                      <div class="mt-30"><a class="btn btn-grey-small mr-5" href="">14 Tonnes</a><a class="btn btn-grey-small mr-5" href="">7 m3</a>
-                      </div>
-                      <div class="card-2-bottom mt-30">
-                        <div class="row">
-                          <div class="col-lg-7 col-7"><span class="card-text-price">250.500</span><span class="text-muted">F</span></div>
-                          <div class="col-lg-5 col-5 text-end">
-                            <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Postuler</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    
   <div class="mt-10">
     <div class="section-box">
       <div class="container"> 
