@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\User\VerifyEmail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -24,5 +26,13 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function message()
+    {
+        Mail::to('arduino1024@gmail.com')
+            ->send(new VerifyEmail());
+
+        return view('email.confirm');
     }
 }

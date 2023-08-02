@@ -7,6 +7,7 @@ use App\Http\Controllers\AddOfferController;
 use App\Http\Controllers\MyOffersController;
 use App\Http\Controllers\OffersController;
 use App\Http\Controllers\OfferDetailsController;
+use    App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,10 +33,12 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);//add for redirection
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/addoffer', [AddOfferController::class, 'index'])->name('add_offer');
 Route::get('/myoffers', [MyOffersController::class, 'index'])->name('myoffers');
 Route::get('/offerdetails', [OfferDetailsController::class, 'index'])->name('offer_details');
 Route::get('/offers', [OffersController::class, 'index'])->name('offers');
+
+Route::get('/message', [AddOfferController::class, 'message'])->name('message');
 
